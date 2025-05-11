@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    border: 3px solid red;
+}
+
+footer {
+    border: 3px solid black;
+}
+
+.contact__form {
+    border: 3x solid red;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+    border: 1px solid red;
+}
+
+.navbar-container {
+     display: flex;
+}
+
+.navbar-container a {
+    padding: 10px;
+    text-decoration: none;
+}
