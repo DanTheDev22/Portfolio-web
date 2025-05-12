@@ -8,108 +8,135 @@
     <link type="image/png" sizes="120x120" rel="icon" href="images/favicon.png">
 </head>
 <body>
+    <!-- Particles.js library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
     <!--Header-->
-    <header>
-        <div class="hero">
-            <span class="personal-brand">DanTheDev22</span>
+    <header id="Home">
 
-            <nav class="navbar-container">
-                <a href="#Home">Home</a>
-                <a href="#About">About</a>
-                <a href="#Projects">Projects</a>
-                <a href="#Skills">Skills</a>
-                <a href="#Contact">Contact</a>
-            </nav>
-        </div>
+        <div class="hero-wrapper">
+            <div id="particles-js"></div>
 
-        <div class="hero__info">
-            <p>Hello! I'm</p>
-            <h1>Daniel Mogoreanu</h1>
-            <h2>Java Software Engineer</h2>
+                <div class="hero-overlay">
+                    <div class="hero-section">
+                        <div class="container">
+                            <span class="brand-name">&lt;DanTheDev22/&gt;</span>
+
+                            <nav class="navbar">
+                                <a href="#Home">Home</a>
+                                <a href="#About">About</a>
+                                <a href="#Projects">Projects</a>
+                                <a href="#Skills">Skills</a>
+                                <a href="#Contact">Contact</a>
+                            </nav>
+                        </div>
+
+                        <div class="hero-section__info">
+                            <p>Hello! I'm</p>
+                            <h1>Daniel Mogoreanu</h1>
+                            <h2>Java Software Engineer</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-fade"></div>
+            </div>
         </div>
     </header>
     <!--About-->
-    <section class="about-me">
-        <h1>About me</h1>
-        <p>Self-taught Software Engineer oriented ... Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Ratione, nobis aperiam debitis cumque nisi sit reiciendis soluta et, niet quisquam iure numquam ipsum cumque!</p>
+    <section class="about-section" id="About">
+        <h1>&lt;About me/&gt;</h1>
+        <p>Self-taught Java Software Engineer with a strong passion for building efficient, scalable, and maintainable applications.
+        With a continuous learning mindset, I specialize in backend development using Java and Spring, while also having experience with frontend technologies.</p>
     </section>
     <!--Projects-->
-    <section class="projects__container">
-        <h1>Projects</h1>
+    <section class="projects-section" id="Projects">
+        <h1>&lt;Projects/&gt;</h1>
         <p>Explore some projects I've built, highlighting my skills across different technologies and challenges.</p>
     </section>
     <!--Skills-->
-    <section class="skills__container">
-        <h1>Skills</h1>
+    <section class="skills-section" id="Skills">
+        <h1>&lt;Skills/&gt;</h1>
         <p>With hands-on experience in both client-side and server-side technologies, I can develop comprehensive and maintainable web solutions.</p>
-        <div class="skills__container-info">
-            <a href="">
-                <img src="" alt="">
-                Java
-            </a>
-            <a href="">
-                <img src="" alt="">
-                Spring
-            </a>
-            <a href="">
-                <img src="" alt="">
-                HTML5
-            </a>
-            <a href="">
-                <img src="" alt="">
-                CSS3
-            </a>
-            <a href="">
-                <img src="" alt="">
-                Postgresql
-            </a>
-            <a href="">
-                <img src="" alt="">
-                JavaFX
-            </a>
-            <a href="">
-                <img src="" alt="">
-                Docker
-            </a>
-            <a href="">
-                <img src="" alt="">
-                Hibernate
-            </a>
-            <a href="">
-                <img src="" alt="">
-                Heroku
-            </a>
+        <div class="skills-section__categories">
+
+        <div class="skills-category">
+        <h3>Languages</h3>
+        <ul>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
         </div>
+
+        <div class="skills-category">
+        <h3>Frameworks & Libraries</h3>
+        <ul>
+            <li>Spring Framework (Boot, MVC, Security, JPA, AOP, JDBC)</li>
+            <li>Hibernate</li>
+            <li>JUnit</li>
+            <li>Mockito</li>
+        </ul>
+        </div>
+
+        <div class="skills-category">
+        <h3>Databases</h3>
+        <ul>
+            <li>PostgreSQL</li>
+            <li>H2 (in-memory)</li>
+        </ul>
+        </div>
+
+        <div class="skills-category">
+        <h3>Tools & DevOps</h3>
+        <ul>
+            <li>Maven</li>
+            <li>Git</li>
+            <li>Docker</li>
+            <li>Postman</li>
+            <li>Heroku</li>
+            <li>Debugging (IDE, logs, breakpoints)</li>
+        </ul>
+        </div>
+
+        <div class="skills-category">
+        <h3>Development Principles</h3>
+        <ul>
+            <li>RESTful API Design</li>
+            <li>SOLID Principles</li>
+            <li>DRY (Don't Repeat Yourself)</li>
+            <li>Design Patterns</li>
+        </ul>
+        </div>
+
+  </div>
     </section>
     <!--Contact-->
-    <section id="Contact" class="contact__form">
+    <section id="Contact" class="contact-section" >
         <h1>Reach out</h1>
         <p>Questions or collaboration in mind? 
             Drop me a message — I’m all ears!
         </p>
         
-        <div class="container-form">
+        <div class="contact-form">
             <form action="contact-me" method="post">
                 <label for="name">Your Name:</label>
                 <br>
-                <input type="text" name="name" placeholder="FullName">
+                <input type="text" name="name" placeholder="FullName" required>
                 <br>
 
                 <label for="email">Your Email:</label>
                 <br>
-                <input type="email" name="email" placeholder="Email">
+                <input type="email" name="email" placeholder="Email" required>
                 <br>
 
                 <label for="subject">Subject:</label>
                 <br>
-                <input type="text" name="subject" placeholder="Subject">
+                <input type="text" name="subject" placeholder="Subject" required>
                 <br>
 
                 <label for="message">Message:</label>
                 <br>
-                <input type="text" name="message" placeholder="Message">
+                <input type="text" name="message" placeholder="Message" required>
                 <br>
 
                 <button type="submit">Send message</button>
@@ -119,12 +146,85 @@
     </section>
     <!--Footer-->
     <footer>
-        <div class="container__footer">
+        <div class="footer-section">
             <span>DanTheDev22</span>
-            <p>lorem lusum epson canon 123</p>
+            <p>Designed and built with passion and coffee.</p>
 
-            <p>&copy 2025 Daniel Mogoreanu </p>
+            <p>&copy; 2025 Daniel Mogoreanu </p>
         </div>
     </footer>
+
+
+    <script>
+        particlesJS('particles-js',
+            {
+                "particles": {
+                 "number": {
+                    "value": 80,
+                    "density": {
+                    "enable": true,
+                    "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle"
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false
+                },
+                "size": {
+                    "value": 3,
+                    "random": true
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 3,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false
+                }
+                },
+                "interactivity": {
+                "detect_on": "window",
+                "events": {
+                    "onhover": {
+                    "enable": true,
+                    "mode": "grab"
+                    },
+                    "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                        },
+                        "push": {
+                        "particles_nb": 4
+                        }
+                    }
+                    },
+                    "retina_detect": true
+                }
+            );
+</script>
 </body>
 </html>
