@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1c1f26">
     <title>DanTheDev22</title>
     <link rel="stylesheet" href="css\styles.css">
     <link type="image/png" sizes="120x120" rel="icon" href="images/favicon.png">
@@ -32,9 +36,19 @@
                         </div>
 
                         <div class="hero-section__info">
-                            <p>Hello! I'm</p>
-                            <h1>Daniel Mogoreanu</h1>
-                            <h2>Java Software Engineer</h2>
+                            <div class="hero-secion__iamge">
+                                <img src="images\pngwing.com.png" alt="Daniel Mogoreanu">
+                            </div>
+
+                            <div class="hero-section__text">
+                                <p>Hello! I'm</p>
+                                <h1>Daniel Mogoreanu</h1>
+                                <h2>Java Software Engineer</h2>
+                                <div class="hero-buttons">
+                                    <a href="#Projects" class="btn">View Projects</a>
+                                    <a href="documents\text.pdf" download class="btn">Download CV</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -156,40 +170,40 @@
 
 
     <script>
-        particlesJS('particles-js',
+       particlesJS('particles-js',
             {
                 "particles": {
                  "number": {
                     "value": 80,
                     "density": {
                     "enable": true,
-                    "value_area": 800
+                    "value_area": 1000
                     }
                 },
                 "color": {
-                    "value": "#ffffff"
+                    "value": "#00ff88"
                 },
                 "shape": {
                     "type": "circle"
                 },
                 "opacity": {
-                    "value": 0.5,
+                    "value": 0.25,
                     "random": false
                 },
                 "size": {
-                    "value": 3,
+                    "value": 2,
                     "random": true
                 },
                 "line_linked": {
                     "enable": true,
-                    "distance": 150,
-                    "color": "#ffffff",
-                    "opacity": 0.4,
+                    "distance": 120,
+                    "color": "#00ff88",
+                    "opacity": 0.2,
                     "width": 1
                 },
                 "move": {
                     "enable": true,
-                    "speed": 3,
+                    "speed": 2,
                     "direction": "none",
                     "random": false,
                     "straight": false,
@@ -212,7 +226,7 @@
                 },
                 "modes": {
                     "grab": {
-                        "distance": 140,
+                        "distance": 100,
                         "line_linked": {
                             "opacity": 1
                         }
