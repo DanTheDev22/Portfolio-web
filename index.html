@@ -3,6 +3,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,70 +59,134 @@
     </header>
     <!--About-->
     <section class="about-section" id="About">
-        <h1>&lt;About me/&gt;</h1>
-        <p>Self-taught Java Software Engineer with a strong passion for building efficient, scalable, and maintainable applications.
-        With a continuous learning mindset, I specialize in backend development using Java and Spring, while also having experience with frontend technologies.</p>
-    </section>
+  <h1>&lt;About Me/&gt;</h1>
+  <div class="about-content">
+    <div class="about-text">
+      <p>
+        👋 Hey there! I'm <strong>Daniel Mogoreanu</strong>  — a self-taught <strong>Java Software Engineer</strong>  with a strong passion for technology and a drive to grow into a top specialist.
+      </p>
+      <p>
+       Since childhood, I’ve been fascinated by how things work, always exploring tech and solving problems on my own. That curiosity turned into a serious commitment to backend development with Java and Spring Boot.
+      </p>
+      <p>
+        I enjoy building scalable, maintainable systems, working with databases, designing RESTful APIs, and occasionally jumping into the frontend. I care deeply about clean architecture, solid design, and writing code that just makes sense.
+      </p>
+      
+    </div>
+    <div class="about-image">
+      <img src="images/about-photo.png" alt="Daniel Mogoreanu Portrait">
+    </div>
+  </div>
+</section>
     <!--Projects-->
     <section class="projects-section" id="Projects">
-        <h1>&lt;Projects/&gt;</h1>
-        <p>Explore some projects I've built, highlighting my skills across different technologies and challenges.</p>
-    </section>
+    <h1>&lt;Projects/&gt;</h1>
+    <p>Explore some of the projects I’ve worked on. These showcase my skills in different technologies and my ability to solve real-world problems.</p>
+
+    <div class="projects-container">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>TradeBot – Financial Assistant</h3>
+            <p class="project-description">
+                TradeBot is a Java-based Telegram bot that provides real-time financial data and personalized tools for traders and investors. It's designed to make market monitoring simple, fast, and interactive — right inside Telegram.
+            </p>
+            <p class="project-tech">
+                Technologies Used: Java, Spring Boot, Docker, Telegram Bot API
+            </p>
+
+           
+
+            <ul class="project-highlights">
+                <li>Real-time crypto, stock, and forex price data</li>
+                <li>Custom price alerts directly in Telegram</li>
+                <li>Currency exchange and symbol lookup tools</li>
+                <li>US market open/close status and supported currency lists</li>
+                <li>Modular, scalable, and easy to extend</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="https://t.me/my_trading_assist_bot" target="_blank" class="btn btn-demo">
+                    <i class="fas fa-rocket"></i> Live Demo
+                </a>
+                <a href="https://github.com/DanTheDev22/TradeBot" target="_blank" class="btn btn-github">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>Tic-Tac-Toe AI Game</h3>
+            <p class="project-description">
+                A classic desktop Tic-Tac-Toe game built, featuring both single and multiplayer modes.
+            </p>
+            <p class="project-tech">
+                Technologies Used: Java, JavaFX
+            </p>
+            
+            <ul class="project-highlights">
+                <li>Play against human or AI opponents</li>
+                <li>Difficulty levels: Easy, Medium and Hard levels</li>
+                <li>Restart and status tracking features</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="https://t.me/my_trading_assist_bot" target="_blank" class="btn btn-demo">
+                    <i class="fas fa-rocket"></i> Live Demo
+                </a>
+                <a href="https://github.com/DanTheDev22/TradeBot" target="_blank" class="btn btn-github">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
     <!--Skills-->
     <section class="skills-section" id="Skills">
         <h1>&lt;Skills/&gt;</h1>
         <p>With hands-on experience in both client-side and server-side technologies, I can develop comprehensive and maintainable web solutions.</p>
         <div class="skills-section__categories">
 
-        <div class="skills-category">
-        <h3>Languages</h3>
-        <ul>
-            <li>Java</li>
-            <li>HTML</li>
-            <li>CSS</li>
-        </ul>
-        </div>
+       <div class="skills-section__categories">
+    
+    <div class="skills-category">
+      <h3><i class="fas fa-code"></i> Languages</h3>
+      <ul>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </div>
 
-        <div class="skills-category">
-        <h3>Frameworks & Libraries</h3>
-        <ul>
-            <li>Spring Framework (Boot, MVC, Security, JPA, AOP, JDBC)</li>
-            <li>Hibernate</li>
-            <li>JUnit</li>
-            <li>Mockito</li>
-        </ul>
-        </div>
+    <div class="skills-category">
+      <h3><i class="fas fa-layer-group"></i> Frameworks & Libraries</h3>
+      <ul>
+        <li>Spring Boot, MVC, Security, JPA, AOP</li>
+        <li>Hibernate</li>
+        <li>JUnit & Mockito</li>
+      </ul>
+    </div>
 
-        <div class="skills-category">
-        <h3>Databases</h3>
-        <ul>
-            <li>PostgreSQL</li>
-            <li>H2 (in-memory)</li>
-        </ul>
-        </div>
+    <div class="skills-category">
+      <h3><i class="fas fa-database"></i> Databases</h3>
+      <ul>
+        <li>PostgreSQL</li>
+        <li>H2 (in-memory)</li>
+      </ul>
+    </div>
 
-        <div class="skills-category">
-        <h3>Tools & DevOps</h3>
-        <ul>
-            <li>Maven</li>
-            <li>Git</li>
-            <li>Docker</li>
-            <li>Postman</li>
-            <li>Heroku</li>
-            <li>Debugging (IDE, logs, breakpoints)</li>
-        </ul>
-        </div>
-
-        <div class="skills-category">
-        <h3>Development Principles</h3>
-        <ul>
-            <li>RESTful API Design</li>
-            <li>SOLID Principles</li>
-            <li>DRY (Don't Repeat Yourself)</li>
-            <li>Design Patterns</li>
-        </ul>
-        </div>
-
+    <div class="skills-category">
+      <h3><i class="fas fa-tools"></i> Tools & DevOps</h3>
+      <ul>
+        <li>Maven</li>
+        <li>Docker</li>
+        <li>Git & GitHub</li>
+        <li>Postman</li>
+        <li>Heroku</li>
+        <li>Debugging</li>
+      </ul>
+    </div>
   </div>
     </section>
     <!--Contact-->
@@ -131,40 +196,49 @@
             Drop me a message — I’m all ears!
         </p>
         
-        <div class="contact-form">
-            <form action="contact-me" method="post">
-                <label for="name">Your Name:</label>
-                <br>
-                <input type="text" name="name" placeholder="FullName" required>
-                <br>
+         <div class="contact-container">
+        <!-- Contact Form -->
+        <form class="contact-form" action="https://formspree.io/f/xnndwgnl" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+            </div>
 
-                <label for="email">Your Email:</label>
-                <br>
-                <input type="email" name="email" placeholder="Email" required>
-                <br>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="you@example.com" required>
+            </div>
 
-                <label for="subject">Subject:</label>
-                <br>
-                <input type="text" name="subject" placeholder="Subject" required>
-                <br>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" placeholder="Let's build something..." required>
+            </div>
 
-                <label for="message">Message:</label>
-                <br>
-                <textarea name="message" id="message" required></textarea>
-                <br>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="6" placeholder="Your message here..." required></textarea>
+            </div>
 
-                <button type="submit">Send message</button>
-            </form>
-        </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
 
     </section>
     <!--Footer-->
     <footer>
         <div class="footer-content">
             <p>&copy; 2025 Daniel Mogoreanu — Built with 💻 & ☕</p>
+        
+        
+         <div class="social-links">
+            <a href="https://github.com/DanTheDev22" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://md.linkedin.com/in/daniel-m-dev" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
         </div>
-        <!-- TODO -->
-        <div class="social-links"></div>
+        </div>
     </footer>
 
 
@@ -239,5 +313,34 @@
                 }
             );
 </script>
+
+<script>
+  document.querySelector('.contact-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    const action = form.action;
+
+    try {
+      const response = await fetch(action, {
+        method: 'POST',
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        alert("✅ Message sent successfully!");
+        form.reset();
+      } else {
+        alert("❌ Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      alert("⚠️ Network error. Please check your connection.");
+    }
+  });
+</script>
+
 </body>
 </html>
