@@ -10,7 +10,11 @@
     <meta name="theme-color" content="#1c1f26">
     <title>DanTheDev22</title>
     <link rel="stylesheet" href="css\styles.css">
-    <link type="image/png" sizes="120x120" rel="icon" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    <meta name="description" content="Portfolio of Daniel Mogoreanu, Java Software Engineer. Featuring projects, skills, and contact form.">
+    <meta name="author" content="Daniel Mogoreanu">
+
 </head>
 <body>
     <!-- Particles.js library -->
@@ -28,17 +32,19 @@
                             <span class="brand-name">&lt;DanTheDev22/&gt;</span>
 
                             <nav class="navbar">
-                                <a href="#Home">Home</a>
-                                <a href="#About">About</a>
-                                <a href="#Projects">Projects</a>
-                                <a href="#Skills">Skills</a>
-                                <a href="#Contact">Contact</a>
+                              <ul class="navbar-links">
+                                <li><a href="#Home">Home</a></li>
+                                <li><a href="#About">About</a></li>
+                                <li><a href="#Projects">Projects</a></li>
+                                <li><a href="#Skills">Skills</a></li>
+                                <li><a href="#Contact">Contact</a></li>
+                              </ul>
                             </nav>
                         </div>
 
                         <div class="hero-section__info">
-                            <div class="hero-secion__iamge">
-                                <img src="images\pngwing.com.png" alt="Daniel Mogoreanu">
+                            <div class="hero-section__image">
+                                <img src="images\avatar.png" alt="Daniel Mogoreanu">
                             </div>
 
                             <div class="hero-section__text">
@@ -49,6 +55,14 @@
                                     <a href="#Projects" class="btn">View Projects</a>
                                     <a href="documents\text.pdf" download class="btn">Download CV</a>
                                 </div>
+                                <div class="social-links" style="margin-top: 20px;">
+                                    <a href="https://github.com/DanTheDev22" target="_blank" aria-label="GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://md.linkedin.com/in/daniel-m-dev" target="_blank" aria-label="LinkedIn">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -57,173 +71,129 @@
             </div>
         </div>
     </header>
-    <!--About-->
-    <section class="about-section" id="About">
-  <h1>&lt;About Me/&gt;</h1>
-  <div class="about-content">
-    <div class="about-text">
-      <p>
-        👋 Hey there! I'm <strong>Daniel Mogoreanu</strong>  — a self-taught <strong>Java Software Engineer</strong>  with a strong passion for technology and a drive to grow into a top specialist.
-      </p>
-      <p>
-       Since childhood, I’ve been fascinated by how things work, always exploring tech and solving problems on my own. That curiosity turned into a serious commitment to backend development with Java and Spring Boot.
-      </p>
-      <p>
-        I enjoy building scalable, maintainable systems, working with databases, designing RESTful APIs, and occasionally jumping into the frontend. I care deeply about clean architecture, solid design, and writing code that just makes sense.
-      </p>
-      
-    </div>
-    <div class="about-image">
-      <img src="images/about-photo.png" alt="Daniel Mogoreanu Portrait">
-    </div>
-  </div>
-</section>
-    <!--Projects-->
-    <section class="projects-section" id="Projects">
-    <h1>&lt;Projects/&gt;</h1>
-    <p>Explore some of the projects I’ve worked on. These showcase my skills in different technologies and my ability to solve real-world problems.</p>
 
-    <div class="projects-container">
-
-        <!-- Project 1 -->
-        <div class="project-card">
-            <h3>TradeBot – Financial Assistant</h3>
-            <p class="project-description">
-                TradeBot is a Java-based Telegram bot that provides real-time financial data and personalized tools for traders and investors. It's designed to make market monitoring simple, fast, and interactive — right inside Telegram.
-            </p>
-            <p class="project-tech">
-                Technologies Used: Java, Spring Boot, Docker, Telegram Bot API
-            </p>
-
-           
-
-            <ul class="project-highlights">
-                <li>Real-time crypto, stock, and forex price data</li>
-                <li>Custom price alerts directly in Telegram</li>
-                <li>Currency exchange and symbol lookup tools</li>
-                <li>US market open/close status and supported currency lists</li>
-                <li>Modular, scalable, and easy to extend</li>
-            </ul>
-
-            <div class="project-links">
-                <a href="https://t.me/my_trading_assist_bot" target="_blank" class="btn btn-demo">
-                    <i class="fas fa-rocket"></i> Live Demo
-                </a>
-                <a href="https://github.com/DanTheDev22/TradeBot" target="_blank" class="btn btn-github">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card">
-            <h3>Tic-Tac-Toe AI Game</h3>
-            <p class="project-description">
-                A classic desktop Tic-Tac-Toe game built, featuring both single and multiplayer modes.
-            </p>
-            <p class="project-tech">
-                Technologies Used: Java, JavaFX
-            </p>
-            
-            <ul class="project-highlights">
-                <li>Play against human or AI opponents</li>
-                <li>Difficulty levels: Easy, Medium and Hard levels</li>
-                <li>Restart and status tracking features</li>
-            </ul>
-
-            <div class="project-links">
-                <a href="https://t.me/my_trading_assist_bot" target="_blank" class="btn btn-demo">
-                    <i class="fas fa-rocket"></i> Live Demo
-                </a>
-                <a href="https://github.com/DanTheDev22/TradeBot" target="_blank" class="btn btn-github">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-    <!--Skills-->
-    <section class="skills-section" id="Skills">
-        <h1>&lt;Skills/&gt;</h1>
-        <p>With hands-on experience in both client-side and server-side technologies, I can develop comprehensive and maintainable web solutions.</p>
-        <div class="skills-section__categories">
-
-       <div class="skills-section__categories">
-    
-    <div class="skills-category">
-      <h3><i class="fas fa-code"></i> Languages</h3>
-      <ul>
-        <li>Java</li>
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
-    </div>
-
-    <div class="skills-category">
-      <h3><i class="fas fa-layer-group"></i> Frameworks & Libraries</h3>
-      <ul>
-        <li>Spring Boot, MVC, Security, JPA, AOP</li>
-        <li>Hibernate</li>
-        <li>JUnit & Mockito</li>
-      </ul>
-    </div>
-
-    <div class="skills-category">
-      <h3><i class="fas fa-database"></i> Databases</h3>
-      <ul>
-        <li>PostgreSQL</li>
-        <li>H2 (in-memory)</li>
-      </ul>
-    </div>
-
-    <div class="skills-category">
-      <h3><i class="fas fa-tools"></i> Tools & DevOps</h3>
-      <ul>
-        <li>Maven</li>
-        <li>Docker</li>
-        <li>Git & GitHub</li>
-        <li>Postman</li>
-        <li>Heroku</li>
-        <li>Debugging</li>
-      </ul>
-    </div>
-  </div>
-    </section>
-    <!--Contact-->
-    <section id="Contact" class="contact-section" >
-        <h1>Reach out</h1>
-        <p>Questions or collaboration in mind? 
-            Drop me a message — I’m all ears!
+  <!--About-->
+  <section class="about-section" id="About">
+    <h1>&lt;About Me/&gt;</h1>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          👋 Hey there! I'm <strong>Daniel Mogoreanu</strong>  — a self-taught <strong>Java Software Engineer</strong>  with a strong passion for technology and a drive to grow into a top specialist.
         </p>
+        <br>
+        <p>
+        Since childhood, I’ve been fascinated by how things work, always exploring tech and solving problems on my own. That curiosity turned into a serious commitment to backend development with Java and Spring Boot.
+        </p>
+        <br>
+      </div>
+
+      <div class="about-image">
+        <img src="images/about-photo.png" alt="Daniel Mogoreanu Portrait">
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="Projects" class="projects-section">
+    <div class="container">
+      <h1>My Projects</h1>
+
+      <div class="projects-container">
+
+          <!-- Project 1 -->
+          <div class="project-card">
+            <img src="images\tradebot.gif" alt="TradeBot Screenshot" class="project-image">
+            <div class="project-info">
+              <h3>TradeBot – Financial Assistant</h3>
+              <p class="project-description">
+                Java-based Telegram bot providing real-time market data and tools — directly in Telegram.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/DanTheDev22/TradeBot" class="btn btn-github">
+                  <i class="fab fa-github"></i> GitHub Repo
+                </a>
+                <a href="https://t.me/my_trading_assist_bot" class="btn btn-demo">
+                  <i class="fas fa-play-circle"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <img src="images/project2-thumbnail.jpg" alt="Tic Tac Toe Game" class="project-image">
+            <div class="project-info">
+              <h3>Tic-Tac-Toe AI Game</h3>
+              <p class="project-description">
+                Classic desktop Tic-Tac-Toe game featuring both single and multiplayer modes.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/username/project2" class="btn btn-github">
+                  <i class="fab fa-github"></i> GitHub Repo
+                </a>
+                <a href="https://demo2.com" class="btn btn-demo">
+                  <i class="fas fa-play-circle"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!--Skills-->
+  <section class="skills-section" id="Skills">
+    <h1>&lt;Skills/&gt;</h1>
+    <p>Technologies I use to build robust applications.</p>
+    <div class="skills-grid">
+      <div class="skill-badge"><i class="fab fa-java"></i> Java</div>
+      <div class="skill-badge"><i class="fas fa-leaf"></i> Spring Framework</div>
+      <div class="skill-badge"><i class="fas fa-plug"></i> REST API</div>
+      <div class="skill-badge"><i class="fas fa-database"></i> PostgreSQL</div>
+      <div class="skill-badge"><i class="fab fa-docker"></i> Docker</div>
+      <div class="skill-badge"><i class="fab fa-git-alt"></i> Git</div>
+      <div class="skill-badge"><i class="fab fa-html5"></i> HTML5</div>
+      <div class="skill-badge"><i class="fab fa-css3-alt"></i> CSS3</div>
+      <div class="skill-badge"><i class="fas fa-cloud"></i> Heroku</div>
+    </div>
+  </section>
+
+  <!--Contact-->
+  <section id="Contact" class="contact-section" >
+    <h1>Reach out</h1>
+    <p>Questions or collaboration in mind? 
+        Drop me a message — I’m all ears!
+    </p>
         
-         <div class="contact-container">
-        <!-- Contact Form -->
-        <form class="contact-form" action="https://formspree.io/f/xnndwgnl" method="POST">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Your Name" required>
-            </div>
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <form class="contact-form" action="https://formspree.io/f/xnndwgnl" method="POST">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+        </div>
 
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="you@example.com" required>
-            </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="you@example.com" required>
+        </div>
 
-            <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" name="subject" id="subject" placeholder="Let's build something..." required>
-            </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" id="subject" placeholder="Let's build something..." required>
+        </div>
 
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="6" placeholder="Your message here..." required></textarea>
-            </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="6" placeholder="Your message here..." required></textarea>
+        </div>
 
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-
-
-    </section>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
     <!--Footer-->
     <footer>
         <div class="footer-content">
