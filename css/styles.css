@@ -77,10 +77,6 @@ body {
 }
 
 /* Navbar */
-<<<<<<< HEAD
-=======
-
->>>>>>> 67f90c5af2b2cea260943a7f9a0e37b077fdcc07
 .navbar {
   margin-right: 30px;
   display: flex;
@@ -126,7 +122,6 @@ body {
   width: 100%;
 }
 
-<<<<<<< HEAD
 
 @media (max-width: 768px) {
 
@@ -143,8 +138,6 @@ body {
 }
 }
 
-=======
->>>>>>> 67f90c5af2b2cea260943a7f9a0e37b077fdcc07
 /* Hero info */
 
 .hero-section__info {
@@ -294,13 +287,6 @@ body {
     text-align: center;
   }
 }
-
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 67f90c5af2b2cea260943a7f9a0e37b077fdcc07
 /* About page */
 
 .about-section {
@@ -473,6 +459,25 @@ body {
 
 .project-links .btn-github:hover {
   background-color: #2c2f37;
+}
+
+.btn-preview {
+  background-color: #1e1e1e;
+  color: #00ff88;
+  border: 1px solid #00ff88;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-preview:hover {
+  background-color: #00ff88;
+  color: #1c1f26;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.4);
 }
 
 /* Skills page */
@@ -739,4 +744,44 @@ footer {
 .social-links a:hover {
   color: #00ff88;
   transform: translateY(-3px);
+}
+
+/* Modal view  */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(28, 31, 38, 0.95);
+}
+
+.modal-content {
+  margin: 5% auto;
+  width: 90%;
+  max-width: 800px;
+  background: #0f1117;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.modal video {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #00ff88;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  color: #00ff88;
+  cursor: pointer;
 }
