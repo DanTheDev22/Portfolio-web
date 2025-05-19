@@ -77,6 +77,10 @@ body {
 }
 
 /* Navbar */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 67f90c5af2b2cea260943a7f9a0e37b077fdcc07
 .navbar {
   margin-right: 30px;
   display: flex;
@@ -122,6 +126,7 @@ body {
   width: 100%;
 }
 
+<<<<<<< HEAD
 
 @media (max-width: 768px) {
 
@@ -138,6 +143,8 @@ body {
 }
 }
 
+=======
+>>>>>>> 67f90c5af2b2cea260943a7f9a0e37b077fdcc07
 /* Hero info */
 
 .hero-section__info {
@@ -289,8 +296,11 @@ body {
 }
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 67f90c5af2b2cea260943a7f9a0e37b077fdcc07
 /* About page */
 
 .about-section {
